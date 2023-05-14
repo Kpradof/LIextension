@@ -1,0 +1,207 @@
+{
+	"info": {
+		"_postman_id": "a0914ba8-7005-4943-b580-f9890b74045c",
+		"name": "LinkedIn Voyager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Me",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "csrf-token",
+						"value": "ajax:4413984923165580933",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://www.linkedin.com/voyager/api/me",
+					"protocol": "https",
+					"host": [
+						"www",
+						"linkedin",
+						"com"
+					],
+					"path": [
+						"voyager",
+						"api",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profiles",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "csrf-token",
+						"value": "ajax:4413984923165580933",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://www.linkedin.com/voyager/api/identity/profiles/julie-sweet",
+					"protocol": "https",
+					"host": [
+						"www",
+						"linkedin",
+						"com"
+					],
+					"path": [
+						"voyager",
+						"api",
+						"identity",
+						"profiles",
+						"julie-sweet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Activity",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "csrf-token",
+						"value": "ajax:4413984923165580933",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://www.linkedin.com/voyager/api/feed/social/urn:li:activity:6839306968386080769",
+					"protocol": "https",
+					"host": [
+						"www",
+						"linkedin",
+						"com"
+					],
+					"path": [
+						"voyager",
+						"api",
+						"feed",
+						"social",
+						"urn:li:activity:6839306968386080769"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "My posts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "csrf-token",
+						"value": "ajax:4413984923165580933",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://www.linkedin.com/voyager/api/identity/profileUpdatesV2?count=10&includeLongTermHistory=true&moduleKey=member-shares%3Aphone&profileUrn=urn%3Ali%3Afsd_profile%3AACoAAEILWvoBTEav7ZCnTA2e2qt73llYYz1T_kM&q=memberShareFeed&start=0",
+					"protocol": "https",
+					"host": [
+						"www",
+						"linkedin",
+						"com"
+					],
+					"path": [
+						"voyager",
+						"api",
+						"identity",
+						"profileUpdatesV2"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "10"
+						},
+						{
+							"key": "includeLongTermHistory",
+							"value": "true"
+						},
+						{
+							"key": "moduleKey",
+							"value": "member-shares%3Aphone"
+						},
+						{
+							"key": "profileUrn",
+							"value": "urn%3Ali%3Afsd_profile%3AACoAAEILWvoBTEav7ZCnTA2e2qt73llYYz1T_kM"
+						},
+						{
+							"key": "q",
+							"value": "memberShareFeed"
+						},
+						{
+							"key": "start",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Other profile posts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "csrf-token",
+						"value": "ajax:4413984923165580933",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://www.linkedin.com/voyager/api/identity/profileUpdatesV2?count=10&includeLongTermHistory=true&moduleKey=member-shares%3Aphone&profileUrn=urn%3Ali%3Afsd_profile%3AACoAABg8fh0BJ3OsazfASSRaMuW2LPDIJjjyMRQ&q=memberShareFeed&start=0",
+					"protocol": "https",
+					"host": [
+						"www",
+						"linkedin",
+						"com"
+					],
+					"path": [
+						"voyager",
+						"api",
+						"identity",
+						"profileUpdatesV2"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "10"
+						},
+						{
+							"key": "includeLongTermHistory",
+							"value": "true"
+						},
+						{
+							"key": "moduleKey",
+							"value": "member-shares%3Aphone"
+						},
+						{
+							"key": "profileUrn",
+							"value": "urn%3Ali%3Afsd_profile%3AACoAABg8fh0BJ3OsazfASSRaMuW2LPDIJjjyMRQ"
+						},
+						{
+							"key": "q",
+							"value": "memberShareFeed"
+						},
+						{
+							"key": "start",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
