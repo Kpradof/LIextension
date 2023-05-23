@@ -4,55 +4,48 @@
 </head>
 <body>
 <div class="main-frame">
-  <!-- topbar -->
-  <div class="frow" style="margin:12px">
-      <div class="row">
-          <div class="topbar">
-            <div class="rectangle2 fcol" style="height: 50px; background-color: #385A9F; color:white; background-image: url('images/blue_background.svg');">
-        </div>
-      </div>
-      <div class="topbar">
-      </div>
-  </div>
-  <!-- top content-->
-  <div class="rectangle1" style="height: 261px; margin: 0 12px 10px;">
-      <div style="display: flex; justify-content:center; font-weight: 700; font-size: 16px; line-height: 24px;margin-top:15px;">What do you want to do?</div>
-      <div class="rectangle1-1">
-        <div id="cta" style="display: flex; justify-content: center; margin-top:15px; margin-bottom:10px;"><div class="cta_button" id="cta_button"><b>Company Profile</b></div></div>
-        <div class="rectangle1-1-1">
-          <div style="font-weight: 400; font-size: 11px; line-height: 15px;">Type the company's name exactly as it is displayed in the URL, for example "accenture"</div>
-          <div><input style="width:260px; margin-top:5px;" type="text" id="hashtag_search" name="hashtag_search" placeholder="e.g. accenture"></div>
-          
-          <div style="font-weight: 400; font-size: 11px; line-height: 15px;margin-top:10px;">How many items do you need?</div>
-          <div><input style="width:260px; margin-top:5px;" type="text" id="hashtag_search" name="hashtag_search" placeholder="e.g. 500"></div>
-          <div id="cta" style="display: flex; justify-content: center;"><div class="cta_button" id="cta_button">Start now</div></div>
-        </div>
-        <div id="cta" style="display: flex; justify-content: center;margin-top:15px; margin-bottom:10px;"><div class="cta_button" id="cta_button"><b>Person Profile</b></div></div>
-        <div class="rectangle1-1-1">
-          <div style="font-weight: 400; font-size: 11px; line-height: 15px;">Type the person's name exactly as it is displayed in the URL, for example "john-chleborad-8619598"</div>
-          <div><input style="width:260px;  margin-top:5px;" type="text" id="hashtag_search" name="hashtag_search" placeholder="e.g. john-chleborad-8619598"></div>
-          <div style="font-weight: 400; font-size: 11px; line-height: 15px;margin-top:10px;">How many items do you need?</div>
-          <div><input style="width:260px;  margin-top:5px;" type="text" id="hashtag_search" name="hashtag_search" placeholder="e.g. 500"></div>
-          <div id="cta" style="display: flex; justify-content: center;"><div class="cta_button" id="cta_button">Start now</div></div>
-        </div>
-        <div id="trending_hashtags" class="flex-wrap">
-        <div class="rectangle1-1-2"></div>
-        <div>
-          <div id="hashtag_data" class="frow">
-            <div>
-              <span id="fcount" style="font-size: 10px; font-weight: 400; line-height: 14px;"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-  <!-- middle content-->
-  <div class="topbar">
-  <div class="rectangle2 fcol" style="margin-top:20px;height: 50px; background-color: #385A9F; color:white; background-image: url('images/blue_background.svg');">
-  </div>
+<!-- topbar -->
+<div style="height: 10px; background-color: #B45EE6;"></div>
+
+<!-- top content-->
+<div class="rectangle1" style="height: 261px; margin: 0 12px 10px;">
+<div style="display: flex; justify-content:center; font-weight: 700; font-size: 16px; line-height: 24px;margin-top:15px;">What do you want to do?</div>
+
+<div class="rectangle1-1">
+<div style="display: flex; justify-content: center; margin-top:15px; margin-bottom:10px;"><b>Company Profile</b></div>
+
+<div>
+  <div style="font-weight: 400; font-size: 11px; line-height: 15px;">Type the company's name exactly as it is displayed in the URL, for example "accenture"</div>
+  <div><input style="width:260px; margin-top:5px;" type="text" id="company_search" name="hashtag_search" placeholder="e.g. accenture"></div>
+  
+  <div style="font-weight: 400; font-size: 11px; line-height: 15px;margin-top:10px;">How many items do you need? Note: The API is only capable of fetching data for a one-year period.</div>
+  <div><input style="width:260px; margin-top:5px;" type="text" id="items_search_company" name="hashtag_search" placeholder="e.g. 200"></div>
+  <div style="display: flex; justify-content: center;"><div class="cta_button" id="cta_button_company">Start now</div></div>
 </div>
-  </div>
+<div class="loading-container" id="loading-container">
+  <div class="loading-spinner"></div>
 </div>
+</div>
+
+
+<div class="rectangle1-1">
+<div style="display: flex; justify-content: center;margin-top:15px; margin-bottom:10px;"><b>Person Profile</b></div>
+
+<div>
+  <div style="font-weight: 400; font-size: 11px; line-height: 15px;">Type the person's name exactly as it is displayed in the URL, for example "john-chleborad-8619598"</div>
+  <div><input style="width:260px;  margin-top:5px;" type="text" id="person_search" name="hashtag_search" placeholder="e.g. john-chleborad-8619598"></div>
+  
+  <div style="font-weight: 400; font-size: 11px; line-height: 15px;margin-top:10px;">How many items do you need?</div>
+  <div><input style="width:260px;  margin-top:5px;" type="text" id="items_search_person" name="hashtag_search" placeholder="e.g. 200"></div>
+  <div style="display: flex; justify-content: center;"><div class="cta_button" id="cta_button_person">Start now</div></div>
+</div>
+</div>
+
+</div>
+</div>
+<div style="height: 10px; background-color: #B45EE6;"></div>
+</div>
+
 <script src="popup.js"></script>
 </body>
 </html>

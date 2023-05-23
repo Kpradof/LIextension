@@ -1,0 +1,83 @@
+body {
+    margin: 0px;
+}
+
+.cta_button {
+    padding: 8px;
+    background: #9202E6;
+    color: #ffff;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 15px;
+    width: 115px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.main-frame {
+    position: relative;
+    width: 350px;
+    height: 590px;
+    margin: auto;
+    background: #FFFFFF;
+}
+
+.rectangle1-1 {
+    margin-top: 15px;
+    height: 225px;
+    background: #F4F6F9;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+input[type="text"] {
+    width: 200px;
+    height: 30px;
+    padding: 5px 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #333333;
+    background-color: #ffffff;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #7100B3;
+    outline: none;
+}
+
+.loading-container {
+    display: none;
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+    height: 600;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 350px;
+    top:0;
+    left:0;
+  }
+  
+  .loading-spinner {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid #bbb;
+    border-top-color: #333;
+    animation: spin 1s infinite linear;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
